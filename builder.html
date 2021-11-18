@@ -1,1 +1,59 @@
-<!-- Your quiz builder UI goes here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App - Builder</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"> 
+    <link href="https://fonts.googleapis.com/css2?family=Estonia&family=M+PLUS+2:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class='container'>
+        <div class='quiz-layout'>
+            <div class='builder-header'>
+                <h1 class='title' id='builder-title'>Enter Your Question</h1>
+            </div>
+            <div id='question-answer-input'>
+                <h2 id='question' class='question'></h2>
+                <div class="input-section">
+                    <div>
+                        <label id="label-question" class="input-label" for="input-question">Q:</label>
+                        <input id="input-question" class="input" type="text" name="input-question" placeholder='Enter your question here.' value="">
+                    </div>
+                    <div>
+                        <label id="label-answer-a" class="input-label" for="input-answer-a">A:</label>
+                        <input id="input-answer-a" class="input" type="text" name="input-answer-a" placeholder='Enter your choice for A here.' value="">
+                    </div>
+                    <div>
+                        <label id="label-answer-b" class="input-label" for="input-answer-b">B:</label>
+                        <input id="input-answer-b" class="input" type="text" name="input-answer-b" placeholder='Enter your choice for B here.' value="">
+                    </div>
+                    <div>
+                        <label id="label-answer-c" class="input-label" for="input-answer-c">C:</label>
+                        <input id="input-answer-c" class="input" type="text" name="input-answer-c" placeholder='Enter your choice for C here.' value="">
+                    </div>
+                    <div>
+                        <label id="label-answer-d" class="input-label" for="input-answer-d">D:</label>
+                        <input id="input-answer-d" class="input" type="text" name="input-answer-d" placeholder='Enter your choice for D here.' value="">
+                    </div>
+                    <div class='dropdown'>
+                        <label id="label-answer-correct" class="input-label" for="input-answer-correct">Correct answer:</label>
+                        <select id="input-answer-correct" class="input" name="input-answer-correct">
+                            <option value='1'>A</option>
+                            <option value='2'>B</option>
+                            <option value='3'>C</option>
+                            <option value='4'>D</option>
+                        </select>
+                    </div>
+                    <button id='submit-question' class="button" onclick="addQuestion()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="questions.js"></script>
+    <script src="builder.js"></script>
+</body>
+</html>
