@@ -60,7 +60,9 @@ let radioCheck = () => {
 
     for (let i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
-            if ((i+1) === questionBank[count].answer) {
+            console.log(questionBank[count].choiceA)
+            console.log(`comparison ${i+1} and ${questionBank[count].answer}`)
+            if ((i+1) === Number(questionBank[count].answer)) {
                 info.innerHTML = "You are correct."
                 scoreCount++
             }
